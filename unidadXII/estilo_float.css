@@ -1,0 +1,934 @@
+* {
+	font-family: "Black Ops One", cursive, sans serif;
+}
+
+#container {
+	width: 960px;
+	height: 2730px; 
+    background-image: url(imagenes/cartas.jpg);
+    margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+} 
+
+#header {
+	width: 100%;
+	height: 100px;
+	background: radial-gradient(#2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316);
+}
+#logo {
+	width: 30%;
+	height: 100px;
+	background-color: #1e7075;
+	float: left;
+}
+.logo {
+	width: 288px;
+	height: 100px;
+}
+
+/* ---------- INCIO NAV JS. MIYO ---------*/
+
+.miyo {
+    background-color: #05a9f0;	
+}
+.miyo2 {
+	color: #fff;                
+}
+.miyo3 {
+	padding-left: 35px;        
+	margin-top: 10px;
+}
+
+                 /*   HOVER   */
+
+.miyo2:hover {
+	color: #054f19;
+}
+
+.miyo3:hover {
+    color: #edb245;
+}
+
+.navbar-toggler {
+	color: #89e069;
+}	
+
+                 /*-----FIN NAV JS------*/
+
+#contenido1 {
+	width: 100%;
+	height: 500px;
+	background-image: url(imagenes/cartas.jpg);
+	background-position: center center;
+}
+.caja1, .caja2, .caja3 {
+	width: 295px; 
+	height: 460px;
+	background-color: transparent; /* FUNCION NEW CSS */
+	float: left;
+	margin: 10px;
+	border: 2px solid #a2c204;
+} 
+.caja1:hover, .caja2:hover, .caja3:hover {
+	background-color: #d194f7 ;
+}
+h2 {
+	text-align: center;
+}
+.tarot, .pendulo, .tres  {
+	margin: 5px;
+	text-align: justify;
+}
+#contenido2 {
+    width: 100%;
+    height: 530px;
+    background-image: url(imagenes/contenido2.png);
+    background-size: cover;
+}
+.contenedor-video {
+	position: relative;
+	overflow: hidden;
+}
+                                   
+#contenido2 iframe {
+    position: absolute;
+    width: 530px;
+    height: 280px;
+    padding: 10px;
+    padding-top:20px;  
+}
+                       /* span video  */
+.primero {
+	margin: 150px;
+	font-size: 10px;
+}                        
+                       /*     ---     */
+.titulo {
+	font-size: 30px;
+	text-align: right;
+	margin: 10px;
+} 
+
+.checkbox2 {
+	text-align: right;
+	margin: 26px;
+	font-size: 12px;
+	text-shadow:1px 2px 0 #ed052b, 1px 2px 0 #ed052b, 1px 2px 0 #ed052b; 
+}  
+
+#myBtn2 {
+	text-align: center;
+	margin-left: 815px;
+	margin-right: 130px;
+	margin-top: 1px;
+	background-color: #f2f5ba;
+	border-radius: 12px;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+
+#myBtn2:hover {
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+} 
+
+#contenido3 {
+	width: 100%;
+	height: 820px;
+	background-color: #cccbbb;
+	background-position: center center;
+}	
+
+.formulario {
+	margin-left: 15px;
+	float: left;
+}
+
+                   /* FORM TEXT*/
+fieldset {
+	background-color: #fffff0;
+	height: 330px;
+	width: 500px;
+	margin: 10px;
+}
+fieldset > label {
+	margin: 10px;
+}
+textarea {
+	margin: 10px;
+}
+
+#formulario {
+	width: 480px;
+	height: 280px;
+	font-size: 13px;
+}
+.form {
+    width: 500px;	
+}
+legend {
+	margin-left: 180px;
+	color: #a35a15;
+    text-shadow: -1px 0 #00000a, 0 1px #00000a, 1px 0 #00000a, 0 -1px #00000a, -1px 0 #00000a;
+    font-size: 13px;
+}
+                      /* FORM TEXT */
+input[type=text] {
+  margin-top: 20px;
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #00ffbf;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 80%;
+}
+                      /* FORM EMAIL*/
+input[type=email] {
+  margin-top: 8px;
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #00ffbf;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=email]:focus {
+  width: 80%;
+}   
+                    /* FORM PASSWORD  */
+input[type=password] {
+  margin-top: 8px;
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #00ffbf;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=password]:focus {
+  width: 70%;
+}  
+textarea {
+	width: 200px;
+	height: 20px;
+	color: #f76075;
+	margin-top: 20px;
+}
+                      /* BOTONES */
+input[type=submit] {
+	margin-left: 60px;
+	margin-bottom: 20px;
+	background-color: #518704;
+	color: #fff;
+	border-radius: 15px;
+	width: 60px;
+	height: 35px;
+}
+input[type=reset] {
+	margin-left: 70px;
+	margin-bottom: 20px;
+	background-color: #871f03;
+	color: #fff;
+	border-radius: 15px;
+	width: 65px;
+	height: 35px;
+}
+                       /* HOVER */
+input[type=submit]:hover {
+    color: #00000a;
+    width: 60px;
+	height: 55px;
+} 
+input[type=reset]:hover {
+	color: #00000a;
+    background-color: #7d2b1e;
+} 
+                      /*  MODAL  */
+.importante {
+	text-decoration: none;
+	font-size: 16px;
+	margin-left: 400px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #0000;
+	background-color: #f57c73;
+	text-shadow: 3px 3px 0 #ffff, 3px 3px 0 #ffff, 3px 3px 0 #ffff, 3px 3px 0 #ffff;
+	border-radius: 10px 10px;
+	cursor: help;
+}
+
+.importante:hover {
+	color: #0000;
+}
+.boy1 { 
+	text-shadow:1px 2px 0 #ed052b, 1px 2px 0 #ed052b, 1px 2px 0 #ed052b; 
+	font-size: 15px;
+	background-image: url(imagenes/contenido2.png);
+	background-size: cover;
+} 
+.modal-body {
+	background-color: #f5ce7f;
+}
+
+.myBtn3 {
+	background-color: #f2f5ba;
+	border-radius: 12px;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+.myBtn3:hover {
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+} 
+
+                            /* CURSOR */
+.pointer {
+	cursor: pointer;
+}	
+
+
+                         /* MEDIOS DE PAGO  */ 
+.medios-de-pago {
+	width: 55%;
+	height: 180px;
+	background-color: #a7fad9;
+	float: right;
+	padding: 10px;
+	margin-top: -300px;
+}
+
+.pagos {
+	float: right;
+	margin-top: -150px;
+}
+.pago {
+	margin-left: 100px;
+	font-size: 13px;
+}
+
+.modo {
+	margin-left: 90px;
+} 
+
+.mercadopago-button {
+	background-color: #f2f5ba;
+	border-radius: 12px;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+.mercadopago-button:hover {
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}   
+
+
+                          /* WHATSAAP  */
+
+.btn-seccess, .fa-whatsapp {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	line-height: 10px;  
+	bottom: 20px;       
+	right: 180px;
+	background: #0df053;
+	color: #fffffa;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 50px;
+	box-shadow: 0px 1px 10px #00000a;
+	z-index: 100;
+}
+.btn-seccess, .fa-whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+                      
+#footer {
+	width: 100%;
+	height: 170px;
+	background-color: #f5f5b5;
+    clear: both;
+    padding: 2px;	
+}
+
+          /*       BOTON VOLVER     */
+
+          
+.volver {
+	margin-left: 420px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #574613;
+}
+.fa-square-caret-up {
+    color: #fa4723;
+}
+
+h4 {
+	text-align: left;
+	margin: 10px;
+}
+h3 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+	text-shadow:1px 2px 0 #ed052b, 1px 2px 0 #ed052b, 1px 2px 0 #ed052b; 
+}
+span {
+	background-image: radial-gradient(#c2b6b8, #c27751, #a41dc2, #c2b6b8, #c27751, #a41dc2, #c2b6b8, #c27751, #a41dc2, #c2b6b8, #c27751, #a41dc2);
+}
+p {
+	margin-left: 8px;
+}
+.redes {
+	text-decoration: none;
+	margin-left: 10px;
+}
+a, .redes {
+	color: #0c0c0d;
+	padding-bottom: 5px;
+}
+.fa-instagram {
+	color: #f06007;
+} 
+.fa-facebook {
+	color: #2329cf;
+}
+.fa-twitter {
+	color: #07b6f0;
+}
+                  
+                  /*        U-10        */
+.contenido4 {
+	height: 500px;
+	background-image: url(imagenes/cartas.jpg);
+	background-position: center center;
+}
+#contenedor-desc {
+	height: 500px;
+}
+#mod1-desc {
+	height: 500px;
+}
+#desc1 {
+	background-color: #89e069;
+}
+#desc2 {
+	background-color: #c25fc9;
+}
+#desc3 {
+	background-color: #f5ce7f;
+}
+.card-1, .card-2, .card-3 { 
+	padding-top: 60px;
+	box-shadow: 0 2px 5px 0 #0d0d0d, 0 2px 10px 0 #0d0d0d, 0 2px 10px 0 #0d0d0d, 0 2px 10px 0 #0d0d0d;
+}
+.card:hover {
+	box-shadow: 2px 9px 9px 18px #d2d2d2;
+}
+
+                     /* CHECKBOX  */
+
+.cld {
+	background-color: #89e069;
+	border-radius: 40px;
+}
+.dlc {
+	background-color: #c25fc9;
+	border-radius: 40px;
+}
+.checkbox1 {
+	font-size: 14px;
+}
+.ttt {
+	border-color: #000;
+}
+.list-group {
+	margin: 10px;
+}
+    
+
+ /*----------------PRIMER PANTALLA-------------------*/
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+	
+html, body {
+	width: 580px;
+	height: 1700px;
+}   
+#container {
+	width: 580px;
+	height: auto;      
+	background-image: url(imagenes/cartas.jpg);
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#header {
+	width: 580px;
+	height: 150px;
+	padding-top: 50px;
+	background: radial-gradient(#2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316);
+}	
+#logo {
+	width: 250px;
+	height: 90px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo {
+	width: 250px;
+	height: 90px;
+}
+
+             /*--------INICIO NAV--------*/
+
+.miyo3 {
+	padding-left: 18px;
+}	
+
+           /*-----------FIN NAV-------------*/
+                    
+#contenido1 {
+	width: 580px;
+	height: 1150px;
+	background-image: url(imagenes/cartas.jpg);
+}
+.caja1, .caja2, .caja3 {
+	width: 550px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+.caja1 {
+	height: 480px;
+} 
+.foto-1 {
+	width: 550px;
+	height: 300px;
+	margin: 1px;
+}
+.caja2 {
+	height: 390px;
+}
+.caja3 {
+	height: 215px;
+}
+.foto2 {
+	width: 550px;
+	height: 250px;
+}
+
+#contenido2 {
+    width: 580px;
+    height: 650px;
+    padding-top: 2px;
+}
+
+                    /*   VIDEO   */
+#contenido2 iframe {
+    width: 350px;
+    height: 200px;
+}  
+.primero {        /* span video */
+	margin: 50px;
+	font-size: 10px;
+}
+                
+.titulo {
+	font-size: 45px;
+	margin: 10px;
+	margin-top: 180px;
+	text-align: left;
+}
+
+.checkbox2 {
+	text-align: left;
+	margin-top: 0;
+	padding: 37px;
+	font-size: 12px;
+}
+
+#myBtn2 {
+	margin: 90px;
+	margin-top: -150px;
+	background-color: #f2f5ba;
+	border-radius: 12px;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+#myBtn2:hover {
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}   
+
+#contenido3 {
+	width: 580px;
+	height: 1050px;
+}
+
+                    /*  MODAL  */
+.importante {
+	margin-left: 190px;
+}	
+.formulario {
+    float: none;  
+}
+#formulario {
+	width: 480px;
+	height: 280px;
+	margin: 30px;
+	font-size: 13px;
+}
+                   /* MEDIOS DE PAGO */   
+.medios-de-pago {
+	display: block;
+	float: none;
+	padding: 10px;
+	margin-top: -100px;
+	margin-left: 140px;
+}
+
+.pagos {
+	float: right;
+	padding-top: 30px;
+}
+.pago {
+	margin-left: 100px;
+}
+
+                     /* WHATSAPP */
+.btn-seccess, .fa-whatsapp {
+	bottom: 55px;         
+	left: 450px;
+}
+
+.contenido4 {
+	height: auto;
+	background-image: url(imagenes/cartas.jpg);
+}
+#contenedor-desc {
+	height: auto;
+}
+#mod1-desc {
+	height: auto;
+}
+
+#footer {
+	width: 580px;
+	height: 190px;
+	clear: none;
+    padding: 5px;
+}
+p {
+	margin-left: 15px;
+}
+  
+}/*------------------------ FIN @MEDIA 1 -----------------------*/
+
+@media all and (max-width: 599px) {
+    html, body {
+	height: auto;
+}   
+#container {
+	width: 100%;
+	height: auto;
+	background-image: url(imagenes/cartas.jpg);
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#header {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	padding-top: 65px;
+}
+#logo {
+	width: 250px;
+	height: 90px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo {
+	width: 250px;
+	height: 90px;
+}
+
+        /*-------INICIO NAV----------*/
+
+.miyo3 {
+	padding-left: 0;
+	margin-top: 8px;
+}
+
+       /*--------FIN NAV-------------*/ 
+
+#contenido1 {
+	width: 100%;
+	height: auto; 
+	margin-top: 30px;
+	background-image: url(imagenes/cartas.jpg);
+}
+.caja1, .caja2, .caja3 {
+	width: 90%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+.caja1 {
+	height: 510px;
+} 
+.foto-1 {
+	width: 100%;
+	height: 230px;
+	margin: 1px;
+}
+
+.tarot {
+    width: 100%;
+	height: 200px;
+	margin: 0;
+}
+.caja2 {
+	height: 400px; 
+}
+.foto2 {
+	width: 100%;
+	height: 220px;
+}
+.caja3 {
+	height: 320px; 
+}
+.pendulo {
+	width: auto;
+	height: 100px;
+}
+#contenido2 {
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+}
+                    /*  VIDEO  */
+#contenido2 iframe {
+    width: auto;
+    height: 35%;
+    margin-top: 10px;
+}   
+.primero {
+	margin: 30px;
+	font-size: 10px;
+}
+          
+.titulo {
+	font-size: 22px;   
+	padding: 2px;      
+	margin-left: 90px;
+	margin-top: 280px;
+	text-align: left;
+}
+
+.checkbox2 {
+	font-size: 9px;
+	margin: 8px;       
+	margin-top: 5px;
+	margin-left: 100px;
+	text-align: left;
+
+}
+
+#myBtn2 {
+	margin-left: 110px;  
+}   
+
+#myBtn2 {
+	margin: 100px;
+	margin-top: 1px;
+	background-color: #f2f5ba;
+	border-radius: 12px;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+#myBtn2:hover {
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}   
+
+#contenido3 {
+	width: 100%;
+	height: auto;
+}
+
+                    /*  MODAL  */
+.importante {
+	margin-left: 15px;
+}
+
+fieldset {
+	height: auto;
+	width: 100%;
+}
+fieldset > label {
+	margin: 10px;
+}
+
+#formulario {
+	width: 350px;
+	height: auto;
+	margin-left: 0;
+	margin: 0;
+}
+.form {
+    width: 100%;	
+}
+legend {
+	color: #a35a15;
+    text-shadow: -1px 0 #00000a, 0 1px #00000a, 1px 0 #00000a, 0 -1px #00000a, -1px 0 #00000a;
+    font-size: 13px;
+}
+textarea {
+	display: none;
+}
+
+input[type=text]:focus {
+  width: 65%;
+}
+
+input[type=email]:focus {
+  width: 65%;
+}
+
+input[type=password]:focus {
+  width: 50%;
+}
+
+                      /* MEDIOS DE PAGO  */ 
+.medios-de-pago {
+	width: 50%;
+	height: auto;
+	background-color: #cccbbb;
+	float: none;
+	display: block;
+	padding: 10px;
+	margin-top: 170px;
+}
+
+.pagos {
+	float: none;
+	margin-top: -180px;
+	background-color: #cccbbb;
+}
+.pago {
+	margin-left: 180px;
+}
+
+.mercadopago-button {
+	margin-left: 33px;
+    border-radius: 10px;
+    border: 2px solid #3866A3;
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+.mercadopago-button:hover {
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}
+
+.modo {
+	margin-left: 27px;
+}
+
+.contenido4 {
+	height: auto;
+	background-image: url(imagenes/cartas.jpg);
+}
+#contenedor-desc {
+	height: auto;
+}
+#mod1-desc {
+	height: auto;
+}
+
+                         /* WHATSAPP  */
+
+.btn-seccess, .fa-whatsapp {
+    line-height: 0;
+	margin-left: 85px;
+	margin-bottom: 10px;
+	bottom: 15px;         
+	left: 330px; 
+}
+.btn-seccess, .fa-whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff; 
+}
+#footer {
+	width: 100%;
+	height: 195px; 
+	clear: none;
+    padding: 9px;
+}
+.volver {
+	margin: 42px;
+}
+.fa-square-caret-up {
+    width: 20px;
+    height: 20px;
+}
+
+} /*-----FIN SEGUNDA PANTALLA------*/

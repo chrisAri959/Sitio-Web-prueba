@@ -1,0 +1,400 @@
+* {
+	font-family: "Black Ops One", cursive, sans serif;
+}
+
+
+#container {
+	width: 960px;
+	height: auto;
+	background-image: url(imagenes/contenido2.png);
+	margin-left: auto;
+	margin-right: auto;
+}
+#header {
+	width: 100%;
+	height: 100px;
+	/*background-color: #9c6433;*/
+	background: radial-gradient(#2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316);
+}
+#logo {
+	width: 30%;
+	height: 100px;
+	background-color: #1e7075;
+	float: left;
+}
+.logo {
+	width: 288px;
+	height: 100px;
+}
+#nav {
+	width: 70%;
+	height: 45px;
+	background-color: #05a9f0;
+	float: right;
+	position: relative;
+	top: 32px;
+}
+.nav__li {
+    float: left;
+    list-style: none;      
+    padding: 15x;
+    color: #fff;
+}
+.nav__li:hover > a {
+    color: #bbb;
+}
+.nav__li:hover {
+    color: #bbb;
+}
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+}
+.nav__li i {
+	box-sizing: border-box;
+	text-align: left;
+	margin-left: 5px;
+}
+#contenido1 {
+	width: 100%;
+	height: 513px;
+	background-image: url(imagenes/cartas.jpg);
+}
+.caja1, .caja2, .caja3 {
+	width: 296px;
+	height: 460px;
+	background-color: transparent; /* FUNCION NEW CSS */
+	float: left;
+	margin: 10px;
+	border: 2px solid #a2c204;
+} 
+.caja1:hover, .caja2:hover, .caja3:hover {
+	background-color: #d194f7 ;
+}
+h2 {
+	text-align: center;
+}
+.tarot, .pendulo, .tres  {
+	margin: 5px;
+	text-align: justify;
+}
+#contenido2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(imagenes/contenido2.png);
+}
+.contenedor-video {
+	position: relative;
+	overflow: hidden;
+	/*padding-top: 56.25%;*/
+}
+#contenido2 iframe {
+    position: absolute;
+    width: 530px;
+    height: 280px;
+    padding: 10px;
+    padding-top:20px;
+}
+.primero {
+	margin: 150px;
+	font-size: 10px;
+}
+#contenido3 {
+	width: 100%;
+	height: 500px;
+	background-color: #cccbbb;
+}
+.titulo {
+	font-size: 20px;
+	margin-top: -1px;
+}
+#myBtn, #myBtn2 {
+	margin: 10px;
+}
+.formulario {
+	width: 50%;
+	height: 250px;
+	background-color: #7d6104;
+	margin: 10px;
+	float: left;
+}
+.medios_de_pago {
+	width: 30%;
+	height: 200px;
+	background-color: #5bba66;
+	float: right;
+	margin: 15px;
+}
+.hora {
+	font-size: 10px;
+	color: #ef38f5;
+}
+#footer {
+	width: 100%;
+	height: 200px;
+	background-color: #f5f5b5;
+    clear: both;
+    padding: 2px;	
+}
+h4 {
+	text-align: left;
+	margin: 5px;
+}
+h3 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+	text-shadow:1px 2px 0 #ed052b, 1px 2px 0 #ed052b, 1px 2px 0 #ed052b; 
+}
+span {
+	background-image: radial-gradient(#c2b6b8, #c27751, #a41dc2, #c2b6b8, #c27751, #a41dc2, #c2b6b8, #c27751, #a41dc2, #c2b6b8, #c27751, #a41dc2);
+}
+p {
+	margin-left: 8px;
+}
+.redes {
+	text-decoration: none;
+	margin-left: 10px;
+}
+a, .redes {
+	color: #0c0c0d;
+	padding-bottom: 5px;
+}
+.fa-instagram {
+	color: #f06007;
+} 
+.fa-facebook {
+	color: #2329cf;
+}
+.fa-twitter {
+	color: #07b6f0;
+}
+          /*----------------PRIMER PANTALLA-------------------*/
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+	
+html, body {
+	width: 580px;
+	height: 1700px;
+}   
+#container {
+	width: 580px;
+	height: 1700px;
+	background-image: url(imagenes/cartas.jpg);
+}
+#header {
+	width: 580px;
+	height: 150px;
+	padding-top: 50px;
+	background: radial-gradient(#2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316, #2ef714, #f707df, #f7c316);
+}	
+#logo {
+	width: 250px;
+	height: 90px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo {
+	width: 250px;
+	height: 90px;
+}
+#nav {
+	width: 580px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	margin-top: -30px;
+}
+.nav__li {
+    float: none;
+    display: inline-block;
+}
+
+#contenido1 {
+	width: 580px;
+	height: 1150px;
+	background-image: url(imagenes/cartas.jpg);
+}
+.caja1, .caja2, .caja3 {
+	width: 550px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+.caja1 {
+	height: 480px;
+} 
+.foto-1 {
+	width: 550px;
+	height: 300px;
+	margin: 1px;
+}
+.caja2 {
+	height: 390px;
+}
+.caja3 {
+	height: 215px;
+}
+.foto2 {
+	width: 550px;
+	height: 250px;
+}
+
+#contenido2 {
+    width: 580px;
+    height: 510px;
+    padding-top: 2px;
+}
+
+     /*   VIDEO   */
+#contenido2 iframe {
+    width: 350px;
+    height: 200px;
+}  
+.primero {
+	margin: 50px;
+	font-size: 10px;
+}
+
+#contenido3 {
+	width: 580px;
+	margin-top: -70px;
+}
+.titulo {
+	font-size: 15px;
+}
+#footer {
+	width: 580px;
+	height: 180px;
+	clear: none;
+    padding: 5px;
+}
+p {
+	margin-left: 15px;
+}
+  
+}  /*------------------------ FIN @MEDIA 1 -----------------------*/
+
+@media all and (max-width: 599px) {
+    html, body {
+	width: 100%;
+	padding: 0;
+	height: auto;
+}   
+#container {
+	width: 100%;
+	height: auto;
+	background-image: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	padding-top: 65px;
+}
+#logo {
+	width: 250px;
+	height: 90px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo {
+	width: 250px;
+	height: 90px;
+}
+#nav {
+	width: 100%;
+	height: 75px;
+    margin: 0;
+    padding: 0;
+	float: none;
+}
+.nav__li {
+    float: none;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+	margin: -15px;
+}
+#nav, .nav__li, ul, a {
+	text-align: center;
+}	
+#contenido1 {
+	width: 100%;
+	height: 1250px;
+	margin-top: 30px;
+	background-image: url(imagenes/cartas.jpg);
+}
+.caja1, .caja2, .caja3 {
+	width: 90%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+.caja1 {
+	height: 470px;
+} 
+.foto-1 {
+	width: 100%;
+	height: 200px;
+	margin: 1px;
+}
+.tarot {
+    width: 100%;
+	height: 200px;
+}
+.caja2 {
+	height: 410px;
+}
+.foto2 {
+	width: 100%;
+	height: 220px;
+}
+.caja3 {
+	height: 300px;
+}
+.pendulo {
+	width: auto;
+	height: 100px;
+}
+#contenido2 {
+    width: 100%;
+    margin-top: -5px;
+}
+    /*  VIDEO  */
+#contenido2 iframe {
+    width: auto;
+    height: 35%;
+    margin-top: 10px;
+}   
+.primero {
+	margin: 30px;
+	font-size: 10px;
+}   
+#contenido3 {
+	width: 100%;
+	margin-top: -20px;
+}
+.titulo {
+	font-size: 25px;
+}
+
+#footer {
+	width: 100%;
+	height: 180px;
+	clear: none;
+    padding: 9px;
+}
+
+} /*-----FIN SEGUNDA PANTALLA------*/

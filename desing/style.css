@@ -1,0 +1,925 @@
+* {
+ 	padding: 0px;
+	margin: 0px;
+	font-family: 'Black Ops One', cursive, sans serif;
+}
+body {
+	background-image: url(imagenes/imagen/fondo.png);
+	width: 1024px;
+	height: 768px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contenedor {
+	width: 1024px;
+	height: 768px;
+	margin: auto;
+	margin-top: 15px;
+}
+header {
+	width: 1024px;
+	height: 156px;
+}	
+             /* FUNCION FONT FACE */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+p {
+  font-family: myFirstFont;
+}
+p {
+	margin-left: 10px;
+	margin-right: 5px;
+	text-align: justify-all; 
+	font-size: 12px;
+}
+                  /* ---------- */
+.grid-container {
+	background: #444;
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"nav nav"
+	"article aside"
+	"article aside"
+	"article aside"
+	"article aside"
+	"footer footer";
+	grid-template-rows: repeat(auto-fill, 1fr);
+	height: 98vh;
+}
+.grid-footer {
+    grid-area: footer;	
+} 
+.grid-header {
+	grid-area: header;
+}
+    /* CONTENIDO HEADER  */
+#banner {
+	width: 512px;
+	height: 156px;
+	float: right;
+}
+#logo {
+	height: 78px;
+	width: 512px;
+	float: left;
+}
+#buscador {
+	height: 78px;
+	width: 512px;
+	float: left;
+	/* ---------------- */
+}
+.grid-nav {
+	grid-area: nav;
+}
+.grid-article {
+	grid-area: article;
+	float: left;
+	height: 528px;
+	width: 620px;
+}
+h2 {
+	text-align: center;
+}
+.grid-aside {
+	grid-area: aside;
+	width: 404px;
+    height: 528px;
+    float: right;
+}
+h3 {
+	text-align: center;
+}
+#lado_izquierdo {
+	background-color: #d2e002;
+}
+              /*  NAV  */ 
+.nav__responsive-ul {
+	display: none;
+}
+.nav {
+    background-color: #48e;
+}
+.nav__li {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+}
+             /* HOVER */ 
+.nav__li:hover > a {
+	color: #bbb;
+}
+.nav__li:hover {
+	color: #bbb;
+}
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+}
+.nav__li i {
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
+}
+.grid-nav {
+	width: 1024px;
+    height: 35px;
+}
+              /* ------ */ 
+              /* ARTICLE */
+article {
+	width: 620px;
+	height: 528PX;
+	float: left;
+	background-color: #a6c206;
+}
+h2 {
+	text-align: center;
+}	
+                /* ASIDE  */
+aside {
+    width: 404px;
+    height: 528px;
+    float: right;
+	background-color: #f58442;
+}
+h3 {
+	text-align: center;
+}
+              /* FOOTER */
+footer {
+	width: 1024px;
+	height: 54px;
+	clear: both;
+	background-color: #faa7f0;
+	margin-left: auto;
+	margin-right: auto;
+}
+h4 {
+	text-align: center;
+}
+.redes {
+	text-decoration: none;
+	margin-left: 10px;
+}
+a, .redes {
+	color: #0c0c0d;
+}
+.fa-instagram {
+	color: #f06007;
+} 
+.fa-facebook {
+	color: #2329cf;
+}
+.fa-twitter {
+	color: #07b6f0;
+}
+       /* Sobre Nosotros */
+.micuenta {
+	background-image: url(imagenes/imagen/fondo.png);
+	margin-left: auto;
+	margin-right: auto;
+	
+} 
+.cuenta {
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 8px;
+	color: #b35a0c;
+	text-shadow: 2px 2px 5px #d9041d;
+}
+h1 {
+	font-size: 30px;
+}
+.datos {
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.6;
+	color: #034d0a;
+	font-size: 20px;
+	width: 1024px;
+}
+.datos:hover {
+	background-image: repeating-linear-gradient(red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%);
+    box-shadow: 1px 1px 2px black, 0 0 50px blue, 0 0 5px darkblue;
+}   
+              /* Ayuda  */  
+                        /* JOYSTICK */
+#joystick:hover {
+	transform: scaleX(-1) skew(2deg, 2deg) translate(1px, 8px);
+}
+#ultimo {
+	filter: invert(70%);
+	box-shadow: 5px 5px 5px #d9041d, 8px 8px 8px #d9041d, 11px 11px 11px #00000a;
+    height: 100px;
+    text-align: center;
+} 
+.ayuda {
+	background-image: url(imagenes/imagen/fondo3.jpg);
+}
+              /* TITULO */ 
+.ayuda-titulo {
+	color:#b505ac;
+	font-size: 30px;
+    margin-bottom: 5px;
+    text-shadow: -1px 0 #00000a, 0 1px #00000a, 1px 0 #00000a, 0 -1px #00000a, -1px 0 #00000a;
+} 
+.ayuda-titulo2 {
+	color:#b505ac;
+	font-size: 20px;
+    margin-bottom: 5px;
+    text-shadow: -1px 0 #00000a, 0 1px #00000a, 1px 0 #00000a, 0 -1px #00000a, -1px 0 #00000a;
+    width: 580px; 
+}
+              /* PARRAFO  */
+.ayuda-parrafo {
+	text-align: justify-all;
+	font-size: 15px;
+	color: #204001;
+	background-color: #05f2cf;
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+              /* WHATSAPP  */
+.btn-seccess, .fa-whatsapp {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	bottom: 50px;
+	right: 90px;
+	background: #0df053;
+	color: #fffffa;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 50px;
+	box-shadow: 0px 1px 10px #00000a;
+	z-index: 100;
+}
+.btn-seccess, .fa-whatsapp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+              /* MEDIOS DE PAGO  */ 
+.pagos {
+	
+	float: right;
+	height: 100px;
+	width: 443,99px;
+}
+.button {
+	margin-left: auto;
+	margin-right: auto;
+}
+.paypal {
+	text-decoration: none;
+	text-shadow: -1px 0 #00000a, 0 1px #00000a;
+	color: #26abad;
+	font-size: 20px;
+}
+              /* FORM TEXT*/
+fieldset {
+	background-color: #fffff0;
+	height: 270px;
+}
+.medios-de-pago {
+	height: 170px;
+	background-color: #50b52b;
+	width: 443,99px;
+}
+#formulario {
+	width: 580px;
+	height: 255px;
+}
+.form {
+    width: 650px;	
+}
+legend {
+	margin-left: 180px;
+	color: #a35a15;
+    text-shadow: -1px 0 #00000a, 0 1px #00000a, 1px 0 #00000a, 0 -1px #00000a, -1px 0 #00000a;
+}
+               /* FORM TEXT */
+input[type=text] {
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #00ffbf;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 80%;
+}
+                /* FORM EMAIL*/
+input[type=email] {
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #00ffbf;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=email]:focus {
+  width: 80%;
+}   
+               /* FORM PASSWORD*/
+input[type=password] {
+  width: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #00ffbf;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=password]:focus {
+  width: 80%;
+}  
+#archivo {
+	color: #f525b6;
+}
+textarea {
+	width: 240px;
+	height: 20px;
+	color: #f76075;
+}
+                 /* BOTONES */
+input[type=submit] {
+	margin-left: 70px;
+	margin-bottom: 20px;
+	background-color: #518704;
+	color: #fff;
+	border-radius: 15px;
+	width: 45px;
+	height: 35px;
+}
+input[type=reset] {
+	margin-left: 70px;
+	margin-bottom: 20px;
+	background-color: #871f03;
+	color: #fff;
+	border-radius: 15px;
+	width: 45px;
+	height: 35px;
+}
+                /* HOVER */
+input[type=submit]:hover {
+    color: #00000a;
+    width: 55px;
+	height: 55px;
+} 
+input[type=reset]:hover {
+	color: #00000a;
+    background-color: #7d2b1e;
+} 
+               /* CURSOR */
+.pointer {
+	cursor: pointer;
+}	
+
+               /* PRIMER PANTALLA */
+
+@media handheld, screen and (min-width:  600px) and (max-width:  1023px) {
+
+
+body {
+	width: 580px;
+	height: auto;
+}
+#contenedor {
+	width: 580px;
+	height: auto;
+}
+header {
+	width: 100%;
+	height: 60px;
+}	
+.grid-container {
+	background: #444;
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"nav nav"
+	"article aside"
+	"article aside"
+	"article aside"
+	"article aside"
+	"footer footer";
+	grid-template-rows: repeat(auto-fill, 1fr);
+	height: 98vh;
+}
+.grid-footer {
+    grid-area: footer;	
+} 
+.grid-header:hover {
+	background-image: repeating-linear-gradient(red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%, red, yellow 10%, green 20%);
+    box-shadow: 1px 1px 2px black, 0 0 50px blue, 0 0 5px darkblue;
+}
+    /* CONTENIDO HEADER  */
+#banner {
+	display: none;
+}
+#logo {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#buscador {
+	display: none;
+	/* ---------------- */
+}
+.grid-nav {
+	grid-area: nav;
+}
+.grid-article {
+	grid-area: article;
+	float: none;
+	height: 453px;
+	width: 380px;
+}
+h2, h3, h4 {
+	font-size: 15px;
+} 
+p {
+	font-size: 12px;
+}
+                       /* IMAGENES */
+.diseño {
+	display: none;
+}
+.comienzos {
+	width: 200px;
+	height: 195px;
+}
+.grid-aside {
+	grid-area: aside;
+	width: 200px;
+    height: 453px;
+    float: none;
+}
+             /*  NAV  */ 
+.nav__li {
+	display: inline-block;
+	padding: 12px;
+}
+.nav__li i {
+	margin-right: 3px;
+}
+.grid-nav {
+	width: 580px;
+	height: 35px;
+	float: none;
+}
+              /* ------ */ 
+              /* ARTICLE */
+article {
+	width: 380px;
+	height: 453px;
+	float: none;
+}
+             /* ASIDE  */
+aside {
+    width: 200px;
+    height: 453px;
+    float: none;
+}
+              /* FOOTER */
+footer {
+	width: 98%;
+	padding: 1%;
+	clear: none;
+}
+h4, a {
+	font-size: 12px;
+}
+.redes {
+	text-decoration: none;
+	margin-left: 7px;
+}
+       /* Sobre Nosotros */
+
+iframe {
+	width: 580px;
+	height: 250px;
+} 
+audio {
+	width: 200px;
+	height: 150px;
+}
+.cuenta {
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 8px;
+}
+h1 {
+	font-size: 30px;
+}
+.datos {
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	width: 580px;
+}
+              /* Ayuda  */  
+                        /* JOYSTICK */
+.joystick {
+	width: 580px;
+	height: 142px;
+}
+h2 {
+	font-size: 12px;
+}
+#ultimo {
+    height: 100px;
+    text-align: center;
+} 
+              /* TITULO */ 
+.ayuda-titulo {
+	font-size: 30px;
+    margin-bottom: 5px;
+} 
+.ayuda-titulo2 {
+	display: none;
+}
+              /* PARRAFO  */
+.ayuda-parrafo {
+	text-align: justify-all;
+	font-size: 10px;
+	width: 580px;
+	margin-left: auto;
+	margin-right: auto;
+}
+              /* MEDIOS DE PAGO  */ 
+.pagos {
+	float: right;
+	height: 100px;
+	width: 443,99px;
+}
+              /* FORM TEXT*/
+fieldset {
+	height: 270px;
+}
+legend {
+	font-size: 15px;
+}
+.medios-de-pago {
+	height: 80px;
+	width: 330px;
+	font-size: 12px;
+}
+              
+#formulario {
+	width: 580px;
+	height: auto;
+	font-size: 12px;
+}
+.form {
+    width: 580px;	
+}
+.paypal, .mercadopago {
+	width: 100px;
+	height: 50px;
+}
+               
+textarea {
+	width: 300px;
+	height: 20px;
+	color: #f76075;
+}
+/* BOTONES */
+input[type=submit] {
+	margin-left: 30px;
+	border-radius: 18px;
+	width: 50px;
+}
+input[type=reset] {
+	margin-left: 30px;
+	border-radius: 18px;
+	width: 55px;
+}
+}
+
+           /*-- SEGUNDA FUNCION --*/
+
+@media handheld, screen and (max-width: 599px) {
+
+
+body {
+	width: 90%;
+	height: auto;
+}
+
+#contenedor {
+	width: 90%;
+	height: auto;
+}
+header {
+	width: 100%;
+	height: auto;
+}	
+
+             /* FUNCION FONT FACE */
+
+                  /* ---------- */
+
+.grid-container {
+	background-image: url(imagenes/imagen/fondo-celu.jpg);
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid-header {
+	width: 100%;
+	height: auto;
+}
+    /* CONTENIDO HEADER  */
+#banner {
+	display: none;
+}
+#logo {
+	height: auto;
+	width: 15%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+#logo .logo {
+	width: 100%;
+	height: auto;
+}
+#buscador {
+	display: none;
+}	
+	/* ---------------- */
+
+.diseño {
+	display: none;
+}
+.comienzos {
+    display: none;	
+}
+.grid-article {
+	float: none;
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.grid-aside {
+	display: none;
+}
+              /*  NAV  */ 
+.nav__responsive-ul {
+	display: none;
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 3px;
+}
+             /* HOVER */ 
+
+.nav__li i {
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid-nav {
+	width: 100%;
+	height: 25px;
+	float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+              /* ------ */ 
+              /* ARTICLE */
+
+
+article {
+	width: 94%;
+	height: auto;
+	float: none;
+	padding: 3%;
+}
+	
+                /* ASIDE  */
+
+aside {
+    display: none;
+}
+
+              /* FOOTER */
+footer {
+	width: 100%;
+	margin-bottom: 20px;
+	height: auto;
+	clear: none;
+}
+
+h2 {
+	font-size: 15px;
+}
+h4, a {
+	font-size: 12px;
+}
+       /* Sobre Nosotros */
+
+.cuenta {
+	font-size: 20px;
+	margin-top: 20px;
+	text-shadow: none;
+}
+iframe {
+	width: 94%;
+	padding: 3%;
+}
+audio {
+	width: 94%;
+	padding: 3%;
+}
+audio p {
+	font-size: 15px;
+}
+img {
+	width: 15%;
+	height: auto;
+}
+
+#ultimo {
+	height: auto;
+    width: 94%;
+    padding: 3%;
+} 
+
+.datos {
+	font-size: 15px;
+	width: 94%;
+	padding: 3%;
+}
+   
+              /* Ayuda  */  
+                        /* JOYSTICK */
+
+#joystick {
+	display: none;
+	}
+
+              /* TITULO */ 
+.ayuda-titulo {
+	font-size: 20px;
+}     
+.ayuda-titulo2 {
+	display: none;
+}
+
+              /* PARRAFO  */
+.ayuda-parrafo {
+	font-size: 12px;
+	width: 94%;
+	padding: 3%;
+}
+              /* WHATSAPP  */
+.btn-seccess, .fa-whatsapp {
+	
+	width: 30px;
+	height: 30px;
+	bottom: 80px;
+	right: 100px;
+	font-size: 30px;
+}
+            /* MEDIOS DE PAGO  */ 
+.pagos {
+	float: none;
+	height: auto;
+	width: 94%;
+	padding: 3%;
+	text-align: center;
+}
+.button {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+}
+.paypal {
+	font-size: 18px;
+	color: #606061;
+}
+legend {
+	margin-left: auto;
+	margin-right: auto;
+}
+ /* FORM TEXT */
+input[type=text]:focus {
+  width: 75%;
+}
+                /* FORM EMAIL*/
+               /* FORM PASSWORD*/
+input[type=password]:focus {
+  width: 65%;
+} 
+              /* FORM TEXT*/
+fieldset {
+	height: auto;
+}
+.medios-de-pago {
+	height: auto;
+	width: 94%;
+	padding: 3%;
+}
+#formulario {
+	width: 100%;
+    height: auto;
+}
+.form {
+    width: 94%;
+    padding: 3px;	
+}
+/* BOTONES */
+input[type=submit] {
+	margin-left: 30px;
+	border-radius: 18px;
+	width: 50px;
+}
+input[type=reset] {
+	margin-left: 30px;
+	border-radius: 18px;
+	width: 55px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
